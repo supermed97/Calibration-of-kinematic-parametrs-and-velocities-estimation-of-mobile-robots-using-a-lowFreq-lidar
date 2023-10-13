@@ -1,0 +1,3 @@
+1) set eigen directory in cmaklist
+2) type auto problem solved with template
+3)set term x11 for gnuplot changed

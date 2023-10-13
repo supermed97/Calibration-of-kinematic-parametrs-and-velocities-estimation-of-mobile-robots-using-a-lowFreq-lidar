@@ -281,7 +281,7 @@ cerr << "control :" << control << std::endl;
   cerr << "ng: " << _num_good_matches << " chi2: " << chi2 << " chi2/good: " << chi2/_num_good_matches << endl;
   cerr << "time iteration: " << t_end-t_start << endl;
   cout << "set size ratio -1" << endl;
-  cout << "set term x11 2" << endl;
+  cout << "set term dumb 2" << endl;
   plotCorrespondences(_endpoints, _correspondences);
   char c;
   cin >> c;

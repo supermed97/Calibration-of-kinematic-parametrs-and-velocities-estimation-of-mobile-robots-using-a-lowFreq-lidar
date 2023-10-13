@@ -368,13 +368,13 @@ cerr << "control :" << control << std::endl;
   cerr << "time iteration: " << t_end-t_start << endl;
 
   cout << "set size ratio -1" << endl;
-  cout << "set term x11 2" << endl;
+  cout << "set term dumb 2" << endl;
   plotCorrespondences(_endpoints, _correspondences);
   char c;
   cin >> c;
 }
-
-void printvec(std::vector<auto>& vectors){
+template <typename T>
+void printvec(std::vector<T>& vectors) {
 for (int i = 0; i < vectors.size(); ++i){
      cerr << vectors[i]<<endl ;}
      cerr<<endl;

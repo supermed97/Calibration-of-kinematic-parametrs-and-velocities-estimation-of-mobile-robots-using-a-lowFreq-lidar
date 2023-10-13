@@ -45,14 +45,15 @@ public:
   void least_square_optimize();
 
   void print_paramters();
-
-  void printvec(std::vector<auto>& vectors);
+template <typename T>
+  void printvec(std::vector<T>& vectors);
 
   void run(int max_iterations);
+template <typename T>
+void printvec(std::shared_ptr< std::vector<T > > vectors);
 
-  void printvec(std::shared_ptr< std::vector<auto > > vectors);
-
-  void printvec(std::vector<auto>* vectors);
+template <typename T>
+void printvec(std::vector<T>* vectors);
 
 
 

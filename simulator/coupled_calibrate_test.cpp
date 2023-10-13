@@ -54,9 +54,9 @@ float k_r=atof(argv[1]); float k_l=atof(argv[2]); float b = atof(argv[3]);
   using ContainerType=Vector2fVector;
    
   cout << "set size ratio -1" << endl;
-  cout << "set term x11 0" << endl;
+  cout << "set term dumb 0" << endl;
   cout << "set size ratio -1" << endl;
-  cout << "set term x11 1" << endl;  
+  cout << "set term dumb 1" << endl;  
   /***_______________________________________________________ ***/
     
   /****FILL VECTORS FOR MICP FROM MY SIMULATOR *****/

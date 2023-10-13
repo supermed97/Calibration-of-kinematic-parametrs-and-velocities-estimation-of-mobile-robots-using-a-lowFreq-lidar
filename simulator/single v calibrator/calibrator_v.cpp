@@ -121,8 +121,8 @@ void calibrator::run(int max_iterations) {
 
   }
 }
-
-void calibrator::printvec(std::vector<auto>* vectors){
+template <typename T>
+void calibrator::printvec(std::vector<T>* vectors){
 for (int i = 0; i < (*vectors).size(); ++i){
      cout << (*vectors)[i]<<endl ;}
      cout<<endl;
@@ -131,8 +131,8 @@ for (int i = 0; i < (*vectors).size(); ++i){
 }
 
 
-
-void calibrator::printvec(std::shared_ptr< std::vector<auto > > vectors){
+template <typename T>
+void calibrator::printvec(std::shared_ptr< std::vector<T > > vectors){
 for (int i = 0; i < (*vectors).size(); ++i){
      cout << (*vectors)[i]<<endl ;}
      cout<<endl;

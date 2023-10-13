@@ -60,9 +60,9 @@ int main(int argc, char** argv) {
   using ContainerType=Vector2fVector;
    
   cout << "set size ratio -1" << endl;
-  cout << "set term x11 0" << endl;
+  cout << "set term dumb 0" << endl;
   cout << "set size ratio -1" << endl;
-  cout << "set term x11 1" << endl;  
+  cout << "set term dumb 1" << endl;  
   /***_______________________________________________________ ***/
     
   /****FILL VECTORS FOR MICP FROM MY SIMULATOR *****/

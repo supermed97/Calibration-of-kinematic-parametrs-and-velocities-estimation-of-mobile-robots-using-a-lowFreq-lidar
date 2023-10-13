@@ -67,5 +67,6 @@ private:
   MidPointAndNormalVector _midpoints;
 };
 void read_ticks(std::string fileName, std::vector<float>* vecr, std::vector<float>* vecl,std::vector<float>* tempi);
-void printvec(std::vector<auto>& vectors);
+template <typename T>
+void printvec(std::vector<T>& vectors) 
 void Save_correspondences(std::string fileName, std::vector<std::pair<int, int> > correspond);
